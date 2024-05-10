@@ -7,7 +7,7 @@ const Landingpage = () => {
   const [text] = useState("hope and all formLandingpg");
   return (
     <>
-      <section className="container">
+      <section className="">
         <main className="">
           {/* <motion.div *
             initial={{ x: 0 }}
@@ -16,7 +16,7 @@ const Landingpage = () => {
           >*/}
           <div className="hero-textcont">
             <h5>Building your Dreams</h5>
-            <h1>Real Estate in Dubai: Ideal for those living in Dubai</h1>
+            <h1 className="hero-text">Real Estate in Dubai: Ideal for  living and Investing</h1>
             <CircularSlide herotext={text} />
           </div>
           <div className="hero-imgcont">

@@ -5,16 +5,20 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="flex">
-          <ul className="flex bor width-50">
+        <div className="flex container space-btw">
+          <ul className="flex bor width-50 space-btw">
             <li>MONTE</li>
             <li>
-              <button><TbMapShare/></button>
-              <button><CiMenuFries /></button>
+              <button>
+                <TbMapShare />
+              </button>
+              <button>
+                <CiMenuFries className="icon-button" color="black" />
+              </button>
             </li>
           </ul>
 
-          <ul className="flex width-50">
+          <ul className="flex width-50 space-btw">
             <li className="property-facts">
               Lorem ipsum dolor sit, amet ducimus.
             </li>
@@ -22,9 +26,12 @@ const Navbar = () => {
               Lorem ipsum dolor sit amet corrupti.
             </li>
             <li>
-              <span> <CiHeart/></span>
               <span>
-                <PiHouseLineBold />
+                {" "}
+                <CiHeart color="white" width={50} />
+              </span>
+              <span>
+                <PiHouseLineBold color="white" />
               </span>
             </li>
           </ul>

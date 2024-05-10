@@ -91,6 +91,11 @@ ul{
 }
 
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 
 .bor{
   border: 2px solid pink;
@@ -150,22 +155,41 @@ ul {
 .flex{
   display: flex;
   align-items: center;
+  
+}
+
+.space-around{
+  justify-content: space-around;
+}
+.space-even{
+  justify-content: space-evenly;
+}
+.space-btw{
   justify-content: space-between;
 }
 
-
 /* navbar */
-
+/* 
+.icon-button{
+  background-color: white;
+} */
 .property-facts{
-  width: 6rem;
+  width: 8rem;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-transform: capitalize;
 }
 
 nav{
   position: absolute;
+  top: 30px;
  width: 100%;
   margin: 0 auto;
   max-width: inherit;
 }
+
 .circle {
   width: 60px;
   height: 60px;
@@ -308,9 +332,13 @@ img {
 .hero-imgcont {
   /* max-width: 500px; */
   width: 50%;
-  border: 3px solid red;
+
   height: 100%;
   border-radius: 20px;
+}
+
+.hero-text{
+  font-size: var(--main-hiii);
 }
 .hero-textcont {
   /* max-width: 500px; */
@@ -334,8 +362,6 @@ main {
   display: flex;
   height: 100vh;
   align-items: center;
-
-  border: 3px solid green;
 }
 /* 
  the circle aligns right no matter what
@@ -391,9 +417,10 @@ body {
   /* height: 100vh; */
 }
 
-.text {
+.textScroll {
   position: absolute;
-  top: 0;
+  top: 30px;
+
   bottom: 0;
   left: 0;
   right: 0;
@@ -403,36 +430,16 @@ body {
   color: black;
   background-color: white;
   width: fit-content;
+  animation-name: textScrollInfinite;
+  animation-iteration-count: infinite;
 }
 
 
+@keyframes textScrollInfinite {
+  0% {}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+}
 
 .ball {
   width: 50px;
@@ -459,3 +466,6 @@ body {
     transform: translateX(100%);
   }
 }
+
+@media (max-width: 600px){}
+@media (max-width: 600px){}
