@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CircularSlide from "./CircularSlide";
-import DubaiCreek from "./dubai-1.jpg";
+import DubaiCreek from "../assets/images/alSufouh.jpg";
 // import { motion } from "framer-motion";
 
 const Landingpage = () => {
