@@ -12,33 +12,38 @@ const Navbar = () => {
     <>
       <nav>
         <div className="flex container space-btw gap-1">
-          <ul className={`navflex ${toggleBtn ? "open":""} flex  width-50 space-btw`}>
-            <li>MONTE</li>
+          <ul className={`navflex width-50 space-btw`}>
+            <li className="">MONTE</li>
             <li>
               <button>
-                <TbMapShare  size={30}/>
+                <TbMapShare size={30} />
               </button>
               <button>
-                <CiMenuFries onClick={handleNavbar}className="icon-button" color="black" size={30} />
+                <CiMenuFries
+                  onClick={handleNavbar}
+                  className="icon-button"
+                  color="black"
+                  size={30}
+                />
               </button>
             </li>
           </ul>
 
-          <ul className="flex width-50 space-btw hide">
+          <ul
+            className={`flex width-50 space-btw hide`}
+          >
             <li className="property-facts">
               Lorem ipsum dolor sit, amet ducimus.
             </li>
             <li className="property-facts">
-    
               Al Sufouh beach welcomes 300 tourist daily.
             </li>
             <li>
-              
-                <button>
+              <button>
                 <CiHeart color="white" size={30} />
               </button>
-            
-                <button>
+
+              <button>
                 <PiHouseLineBold color="white" size={30} />
               </button>
             </li>

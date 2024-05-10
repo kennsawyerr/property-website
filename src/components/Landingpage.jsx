@@ -20,7 +20,7 @@ const Landingpage = () => {
             <CircularSlide herotext={text} />
           </div>
           <div className="hero-imgcont">
-            <img src={DubaiCreek} alt="" />
+            <img src={DubaiCreek} className="hero-img" alt="" />
           </div>
           {/* </motion.div> */}
         </main>

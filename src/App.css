@@ -115,6 +115,25 @@ button{
 li{
   
 }
+
+.hero-img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1.1s;
+  background-size: cover;
+}
+
+.hero-imgcont{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hero-imgcont:hover .hero-img{
+  -ms-zoom-animation: default;
+  transform: scale(1.2);
+}
 .p{
   font-size: var(--sub-hvii);
 }
@@ -168,12 +187,13 @@ ul {
 
 
 
-.open{
-  display: none;
-}
+
 .navflex{
    display: flex;
   align-items: center;
+}
+.open{
+  display: none;
 }
 
 .space-around{
