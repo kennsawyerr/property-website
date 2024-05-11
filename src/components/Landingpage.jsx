@@ -25,6 +25,13 @@ const Landingpage = () => {
           {/* </motion.div> */}
         </main>
       </section>
+
+      {/* <div className="wrapper">
+        <div className="parent">
+           <div className="child bg-one"></div>
+        </div>
+      </div> */}
+
     </>
   );
 };

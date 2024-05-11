@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Landingpage from "./Landingpage";
-import Property from "./Property";
+// import Property from "./Property";
 import LandingPageTwo from "./landingPageTwo";
 
 
@@ -20,7 +20,7 @@ const Home = () => {
     <Navbar/>
       <Landingpage />
       <LandingPageTwo />
-      <Property />
+      {/* <Property /> */}
       <CircularSlide/>
  
     </>

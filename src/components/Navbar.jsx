@@ -3,7 +3,7 @@ import { TbMapShare } from "react-icons/tb";
 import { CiHeart, CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
 const Navbar = () => {
-  const [toggleBtn, setToggleBtn] =useState(false);
+  const [toggleBtn, setToggleBtn] =useState();
  const handleNavbar =() => {
   setToggleBtn(!toggleBtn)
  }
@@ -12,8 +12,10 @@ const Navbar = () => {
     <>
       <nav>
         <div className="flex container space-btw gap-1">
-          <ul className={`navflex width-50 space-btw`}>
-            <li className="">MONTE</li>
+          <ul className={` navflex width-50 space-btw`}>
+            <li className="logo">
+              <a href="/">MONTE</a>
+            </li>
             <li>
               <button>
                 <TbMapShare size={30} />
@@ -29,13 +31,11 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <ul
-            className={`flex width-50 space-btw hide`}
-          >
-            <li className="property-facts">
+          <ul className={`img-info-bar  flex width-50 space-btw hide`}>
+            <li className="property-facts bor">
               Lorem ipsum dolor sit, amet ducimus.
             </li>
-            <li className="property-facts">
+            <li className="property-facts bor">
               Al Sufouh beach welcomes 300 tourist daily.
             </li>
             <li>
