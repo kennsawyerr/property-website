@@ -75,28 +75,22 @@
   --sub-hiii: 0.4rem;
   --sub-hii: 0.3rem;
   --sub-hi: 0.2rem;
-  
 
-
-  
   /* font family */
 }
 
-
-
 /* reset */
 
-ul{
+ul {
   list-style: none;
 }
 
-
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-button{
+button {
   border: none;
   background-color: transparent;
   /* padding: 0 10px; */
@@ -105,22 +99,20 @@ button{
   height: 50px;
 }
 
-.bor{
+.bor {
   border: 2px solid pink;
 }
-.width-50{
+.width-50 {
   width: 50%;
   max-width: 600px;
 }
-li{
-  
+li {
 }
 
-
-.logo{
+.logo {
   font-size: 2rem;
 }
-.hero-img{
+.hero-img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -128,13 +120,11 @@ li{
   background-size: cover;
 }
 
-
-
-.hero-imgcont:hover .hero-img{
+.hero-imgcont:hover .hero-img {
   -ms-zoom-animation: default;
   transform: scale(1.2);
 }
-.p{
+.p {
   font-size: var(--sub-hvii);
 }
 
@@ -145,9 +135,6 @@ li{
   gap: 10px;
   justify-content: space-between;
 }
-
-
-
 
 /* &:after{
   content: "";
@@ -164,8 +151,7 @@ li{
   background: white;
 } */
 
-
-.container{
+.container {
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
@@ -178,31 +164,26 @@ ul {
   padding: 0;
 }
 
-
-.flex{
+.flex {
   display: flex;
   align-items: center;
-  
 }
 
-
-
-
-.navflex{
-   display: flex;
+.navflex {
+  display: flex;
   align-items: center;
 }
-.open{
+.open {
   display: none;
 }
 
-.space-around{
+.space-around {
   justify-content: space-around;
 }
-.space-even{
+.space-even {
   justify-content: space-evenly;
 }
-.space-btw{
+.space-btw {
   justify-content: space-between;
 }
 
@@ -211,20 +192,23 @@ ul {
 .icon-button{
   background-color: white;
 } */
-.property-facts{
+.property-facts {
   width: 9.5rem;
-  
-
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: capitalize;
 }
 
-nav{
+nav {
   position: absolute;
   top: 30px;
- width: 100%;
+  width: 100%;
   margin: 0 auto;
   max-width: inherit;
   z-index: 10;
@@ -362,8 +346,7 @@ nav{
   }
 }
 
-
-.wrapper{
+.wrapper {
   margin: 0 auto;
 }
 
@@ -376,11 +359,11 @@ nav{
   transition: all 1.1s;
 } */
 
-.parent:hover .child{
+.parent:hover .child {
   transform: scale(1.2);
 }
 
-.bg-one{
+.bg-one {
   background-image: url("./assets/images/apartmment.jpg");
 }
 
@@ -394,18 +377,15 @@ img {
 }
 
 .hero-imgcont {
-
   width: 50%;
   height: 100vh;
   border-radius: 20px;
- 
+
   position: relative;
   overflow: hidden;
 }
 
-
-
-.parent{
+.parent {
   width: 37%;
   margin: 20px;
   height: 280px;
@@ -414,13 +394,13 @@ img {
   border-radius: 10px;
   cursor: pointer;
 }
-.hero-text{
+.hero-text {
   font-size: var(--main-hiii);
 }
 .hero-textcont {
   /* max-width: 500px; */
   width: 50%;
- /* border: 3px solid green; */
+  /* border: 3px solid green; */
   height: 100%;
   align-content: center;
   text-align: center;
@@ -480,9 +460,8 @@ main {
 
 body {
   background: #ffff;
-  
+
   font-family: "League Spartan", sans-serif;
-  
 }
 
 .scrolling-text-pg {
@@ -493,41 +472,42 @@ body {
 }
 
 .textScroll {
-  position: absolute;
-  top: 30px;
+  display: inline-block;
 
-  bottom: 0;
-  left: 0;
-  right: 0;
   font-size: var(--main-hiii);
   margin: auto auto;
-  height: fit-content;
-  color: black;
-  background-color: white;
+  /* height: fit-content; */
   width: fit-content;
-  animation-name: textScrollInfinite;
-  animation-iteration-count: infinite;
+  color: white;
+  height: 100vh;
+
+  animation: 35s slide infinite linear;
 }
 
-
-.scrolling-text {
-  width: 100%;
+.textScroll-slide:hover {
+  animation-play-state: paused;
+}
+.textScroll-slide {
+  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+
+  /* transform: translate(-50%, -50%); */
 }
 
-.textScroll {
-  animation: scroll-text 10s linear infinite;
-}
-
-@keyframes scroll-text {
-  0% {
-    transform: translateX(100%);
+@keyframes slide {
+  from {
+    transform: translateX(0);
   }
-  100% {
+
+  to {
     transform: translateX(-100%);
   }
 }
-
 
 .ball {
   width: 50px;
@@ -537,7 +517,7 @@ body {
   animation: roll 2s linear infinite, move 4s linear infinite alternate;
 }
 
-.gap-1{
+.gap-1 {
   gap: 9rem;
 }
 
@@ -559,34 +539,31 @@ body {
   }
 }
 
-@media (max-width: 600px){
-  .flex{
+@media (max-width: 600px) {
+  .flex {
     display: block;
     width: 100%;
   }
 
-  main{
+  main {
     display: block;
     width: 100%;
   }
 
-  .hero-textcont , .hero-imgcont{
+  .hero-textcont,
+  .hero-imgcont {
     width: 100%;
     /* make the hero-img go behind the text  */
   }
 
-  .img-info-bar{
+  .img-info-bar {
     display: none;
     position: absolute;
   }
-  .navflex{
+  .navflex {
     width: 80%;
     margin: 0 auto;
-
   }
 }
-@media (max-width: 900px){
-
-  
+@media (max-width: 900px) {
 }
-
