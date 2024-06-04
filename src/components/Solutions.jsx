@@ -3,12 +3,14 @@ import { useScroll, useTransform } from "framer-motion";
 import { Title } from "./style";
 
 const Solutions = () => {
-      const { scrollYProgress } = useScroll();
-      const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
   return (
     <>
-    <div className="textcont">      <h1>Tailored Solutions for Your Real Estate Needs</h1>
-</div>
+      <div className="textcont">
+        {" "}
+        <h1>Tailored Solutions for Your Real Estate Needs</h1>
+      </div>
       <div className="hero-imgcont">
         <CircularSlide />
         <CircularSlide />
@@ -16,9 +18,11 @@ const Solutions = () => {
         <CircularSlide />
       </div>
 
-      <Title style={{ x }}>We sell furniture</Title>
+      <div className="overflow-hidden">
+        <Title style={{ x }}>We sell furniture</Title>
+      </div>
     </>
   );
-}
+};
 
-export default Solutions
+export default Solutions;
