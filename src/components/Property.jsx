@@ -7,6 +7,7 @@ import Image6 from "../assets/images/dubai-creek.jpg";
 const Property = () => {
   return (
     <>
+    <section className="sect-pad">
       <h2>Explore Our Property Portfolio</h2>
       <section className="property-bg ">
         <ul className="grid property-container">
@@ -29,6 +30,7 @@ const Property = () => {
             <img src={Image6} alt="a house" />
           </li>
         </ul>
+      </section>
       </section>
     </>
   );

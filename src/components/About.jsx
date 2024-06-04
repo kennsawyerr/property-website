@@ -8,8 +8,8 @@ const About = () => {
   //   const [] = useState("hope and all formLandingpg");
   return (
     <>
-      <section className="About-section">
-        <main className="bor">
+      <section className="about-section">
+        <main className="">
           <div className="hero-textcont">
             <div className="textcont">
               <h5>
