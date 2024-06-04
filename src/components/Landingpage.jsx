@@ -16,7 +16,9 @@ const Landingpage = () => {
           >*/}
           <div className="hero-textcont">
             <h5>Building your Dreams</h5>
-            <h1 className="hero-text">Real Estate in Dubai: Ideal for  living and Investing</h1>
+            <h1 className="hero-text">
+              Real Estate in Dubai: Ideal for living and Investing
+            </h1>
             <CircularSlide herotext={text} />
           </div>
           <div className="hero-imgcont">
@@ -31,7 +33,6 @@ const Landingpage = () => {
            <div className="child bg-one"></div>
         </div>
       </div> */}
-
     </>
   );
 };

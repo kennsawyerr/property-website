@@ -130,10 +130,40 @@ li {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
-  grid-template-rows: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, auto));
   gap: 10px;
-  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-item {
+  /* background-color: #f0f0f0; */
+  border: 3px solid yellow;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  width: 700px;
+  z-index: 4;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.grid-item img {
+  max-width: 100%;
+  width: 500px;
+
+  height: auto;
+  display: block;
 }
 
 /* &:after{
@@ -156,9 +186,7 @@ li {
   margin: 0 auto;
   max-width: 1200px;
 }
-.property-container li {
-  width: fit-content;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -186,15 +214,15 @@ ul {
 .space-btw {
   justify-content: space-between;
 }
-
+.gap-1rem{
+  gap: 16px;
+}
 /* navbar */
-/* 
-.icon-button{
-  background-color: white;
-} */
+
 .property-facts {
   width: 9.5rem;
 }
+
 
 h1,
 h2,
@@ -247,10 +275,6 @@ nav {
   align-items: center;
 }
 
-/* .down-arrow {
-  display: flex;
-  justify-content: flex-start;
-} */
 
 .down-arrow {
   margin-right: auto;
@@ -286,19 +310,6 @@ nav {
   /* when the width of the .black-contain has reached a width of greater than 300px, show text */
 }
 
-/* .black-contain.animate {
-  animation-name: roll;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-} */
-/* animation-timeline: scroll(root);
-  animation: scrolling linear; */
-/* 
-.text {
- for changing it to the right , black-contain = float:right;  transform: scaleX(-1);
-  transform: scaleX(-1);
-} */
 
 @keyframes roll {
   0% {
@@ -406,6 +417,13 @@ img {
   text-align: center;
 }
 
+.bor
+
+.textcont{
+  width: 50%;
+}
+
+
 h1,
 h2,
 h3,
@@ -420,11 +438,9 @@ main {
   height: 100vh;
   align-items: center;
 }
-/* 
- the circle aligns right no matter what
-
-
-*/
+.service-numbers{
+  font-size: var(--main-hvii);
+}
 
 /* 
 
@@ -567,3 +583,43 @@ body {
 }
 @media (max-width: 900px) {
 }
+
+
+.about li{
+  padding: 20px 10px 20px;
+  text-align: left;
+}
+
+
+.About-section .testimonial-img-cont{
+  width: 350px;
+  display: flex;
+}
+.About-section .testimonial-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+
+.circle-rings{
+ width: 400px;
+ height: 400px;
+ border-radius : 200px;
+ border: 2px solid white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ text-align: center;
+}
+
+
+.sect-pad{
+  padding: 40px 0;
+}
+.black-bg{
+  background-color: #000;
+  color: white;
+}
+
