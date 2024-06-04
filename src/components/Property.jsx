@@ -32,6 +32,6 @@ const Property = () => {
       </section>
     </>
   );
-};
+}; 
 
 export default Property;

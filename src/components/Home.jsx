@@ -13,6 +13,8 @@ import Solutions from "./Solutions";
 // import CircularSlide from "./CircularSlide";
 import About from "./About";
 import Ownership from "./Ownership";
+import Unrivaled from "./Unrivaled";
+import IdealPropertyGrid from "./IdealPropertyGrid";
 const Home = () => {
   useEffect(() => {
     AOS.init();
@@ -26,6 +28,8 @@ const Home = () => {
       <Property />
       <About />
       <Ownership/>
+      <Unrivaled/>
+      <IdealPropertyGrid/>
     </>
   );
 };
