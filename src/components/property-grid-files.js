@@ -29,7 +29,7 @@ export const propertyVideos = [
   },
   {
     id: 2,
-    src: "/property-grid/dubai-aquarium.jpg",
+    src: "/property-grid/dubai-fountain.jpg",
   },
   {
     id: 1,
@@ -37,7 +37,7 @@ export const propertyVideos = [
   },
   {
     id: 2,
-    src: "/property-grid/dubai-aquarium.jpg",
+    src: "/property-grid/dubai-stadium.jpg",
   },
   {
     id: 1,
