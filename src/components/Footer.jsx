@@ -44,7 +44,7 @@ const Footer = () => {
             <li>
               <div>
                 <div className="hero-subtext">
-                  {" "}
+                
                   &copyMonte 2024 Lorem ipsum dolor sit.
                 </div>
                 <div>
