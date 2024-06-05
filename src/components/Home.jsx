@@ -13,6 +13,9 @@ import About from "./About";
 import Ownership from "./Ownership";
 import Unrivaled from "./Unrivaled";
 import IdealPropertyGrid from "./IdealPropertyGrid";
+import Frequently from "./Frequently";
+import BuildYourFuture from "./BuildYourFuture";
+import Footer from "./Footer";
 const Home = () => {
 
   return (
@@ -26,6 +29,9 @@ const Home = () => {
       <Ownership/>
       <Unrivaled/>
       <IdealPropertyGrid/>
+      <Frequently/>
+      <BuildYourFuture/>
+      <Footer/>
     </>
   );
 };
