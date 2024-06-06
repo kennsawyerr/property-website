@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   /* color */
@@ -71,15 +72,19 @@ button {
   width: 50%;
   max-width: 600px;
 }
-.width-100{
+.width-100 {
   width: 100%;
 }
 
-li {
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 .logo {
   font-size: 2rem;
+  font-weight: 500;
+  font-family: "Noto Serif Display", serif;
 }
 .hero-img {
   width: 100%;
@@ -124,16 +129,14 @@ li {
   object-fit: contain;
 }
 
-h1{
+h1 {
   font-size: var(--main-hiv);
   padding: var(--main-hiv) 0;
 }
 
-.align-tx-c{
+.align-tx-c {
   text-align: center;
 }
-
-
 
 .grid-2 {
   display: grid;
@@ -162,7 +165,8 @@ h1{
   object-fit: contain;
 }
 
-.grid-item img , .grid-item-2 img {
+.grid-item img,
+.grid-item-2 img {
   max-width: 100%;
   border-radius: 20px;
   width: 100%;
@@ -295,7 +299,7 @@ nav {
   width: fit-content;
 }
 
-.hide{
+.hide {
   display: none;
 }
 .black-contain {
@@ -627,26 +631,46 @@ body {
   background-color: #000;
   color: white;
 }
-.border-yellow{
+.border-yellow {
   border: 2px solid yellow;
 }
 
-footer{
+footer {
   border: 2px solid green;
 }
 
-
-
-.contact-btn{
+.contact-btn {
   border-radius: 20px;
   background-color: var(--black);
-
 }
 
-.faqs{
-  background-color:  #FFFDD0;
+.faqs {
+  background-color: #fffdd0;
 }
 
-.faqs-box{
+.faqs-box {
   background-color: white;
+}
+
+/* experimental css here */
+
+.ballistic-ball {
+  width: 100px;
+  /* position: absolute; */
+  display: block;
+  height: 100px;
+  background-color: #000;
+}
+
+.yellow-bg {
+  position: relative;
+  background-color: yellow;
+  margin: 10px auto;
+  width:100%;
+  min-width: max-content;
+  height: 100px;
+  border-radius: 50%;
+  /* pass widthand border-radius as dynamic props 
+    b-ball width === b.ball height
+  */
 }

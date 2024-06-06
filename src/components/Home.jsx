@@ -16,22 +16,25 @@ import IdealPropertyGrid from "./IdealPropertyGrid";
 import Frequently from "./Frequently";
 import BuildYourFuture from "./BuildYourFuture";
 import Footer from "./Footer";
+import Demo from "./Demo";
 const Home = () => {
 
   return (
     <>
       <Navbar />
       <Landingpage />
+
       <Solutions />
       <LandingPageTwo />
       <Property />
       <About />
-      <Ownership/>
-      <Unrivaled/>
-      <IdealPropertyGrid/>
-      <Frequently/>
-      <BuildYourFuture/>
-      <Footer/>
+      <Ownership />
+      <Unrivaled />
+      <IdealPropertyGrid />
+      <Frequently />
+      <BuildYourFuture />
+      <Footer />
+      <Demo/>
     </>
   );
 };
