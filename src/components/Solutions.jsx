@@ -8,7 +8,8 @@ const Solutions = () => {
   return (
     <>
       <div className="textcont">
-        {" "}
+    
+    
         <h1>Tailored Solutions for Your Real Estate Needs</h1>
       </div>
       <div className="hero-imgcont">
