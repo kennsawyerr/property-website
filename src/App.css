@@ -294,6 +294,10 @@ nav {
   height: fit-content;
   width: fit-content;
 }
+
+.hide{
+  display: none;
+}
 .black-contain {
   position: relative;
   background-color: pink;
@@ -636,6 +640,13 @@ footer{
 .contact-btn{
   border-radius: 20px;
   background-color: var(--black);
-  
+
 }
 
+.faqs{
+  background-color:  #FFFDD0;
+}
+
+.faqs-box{
+  background-color: white;
+}
