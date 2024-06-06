@@ -12,10 +12,7 @@ const Solutions = () => {
         <h1>Tailored Solutions for Your Real Estate Needs</h1>
       </div>
       <div className="hero-imgcont">
-        <CircularSlide />
-        <CircularSlide />
-        <CircularSlide />
-        <CircularSlide />
+        <CircularSlide ballWidth={300} ballSizeX={50} />
       </div>
 
       <div className="overflow-hidden">

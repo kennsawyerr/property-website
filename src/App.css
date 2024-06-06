@@ -655,10 +655,10 @@ footer {
 /* experimental css here */
 
 .ballistic-ball {
-  width: 100px;
+  width: 50px;
   /* position: absolute; */
   display: block;
-  height: 100px;
+  height: 50px;
   border-radius: 50%;
   background-color: #000;
 }
@@ -666,7 +666,6 @@ footer {
 .yellow-bg {
   position: relative;
   background-color: yellow;
-  border-radius: 50px;
   width: fit-content;
   min-width: max-content;
   height: 100px;

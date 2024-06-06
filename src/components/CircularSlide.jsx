@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
-const CircularSlide = () => {
+const CircularSlide = ({ ballWidth, ballSizeX }) => {
   return (
     <>
       <div className="container">
         <motion.div
+          style={{
+            width: ballSizeX ? ballSizeX : 100,
+            height: ballSizeX ? ballSizeX : 100,
+            borderRadius: ballSizeX ? ballSizeX : 100,
+          }}
           className="yellow-bg"
           whileInView={{
-            width: 600,
+            width: ballWidth ? ballWidth + ballSizeX : 500,
           }}
           transition={{
             duration: 1,
@@ -14,9 +19,13 @@ const CircularSlide = () => {
           }}
         >
           <motion.div
+            style={{
+              width: ballSizeX ? ballSizeX : 100,
+              height: ballSizeX ? ballSizeX : 100,
+            }}
             className="ballistic-ball"
             whileInView={{
-              x: 500,
+              x: ballWidth,
               scale: [1, 1, 1, 1, 1],
               rotate: [180, 180, 180, 180, 180],
               borderRadius: ["50%", "50%", "50%", "50%", "50%"],

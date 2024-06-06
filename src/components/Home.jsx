@@ -34,7 +34,7 @@ const Home = () => {
       <Frequently />
       <BuildYourFuture />
       <Footer />
-      <Demo/>
+      <Demo  ballWidth={300} ballSizeX={50} />
     </>
   );
 };
