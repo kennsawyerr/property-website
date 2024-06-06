@@ -2,8 +2,8 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container border-yellow">
-          <ul className="flex sect-pad">
+        <div className="container">
+          <ul className="flex sect-pad space-around">
             <li>
               <div>
                 <div className="logo">Monte</div>
@@ -13,19 +13,19 @@ const Footer = () => {
 
             <li>
               <div>
-                <div className="logo">Monte</div>
+                <div className="logo">Mon2</div>
                 <div className="hero-subtext">Lorem ipsum dolor sit.</div>
               </div>
             </li>
             <li>
               <div>
-                <div className="logo">Monte</div>
+                <div className="logo">Mon3</div>
                 <div className="hero-subtext">Lorem ipsum dolor sit.</div>
               </div>
             </li>
           </ul>
 
-          <ul className="flex sect-pad">
+          <ul className="flex sect-pad space-around">
             <li>
               <div>
                 <div className="">Subscribe for news</div>

@@ -71,6 +71,10 @@ button {
   width: 50%;
   max-width: 600px;
 }
+.width-100{
+  width: 100%;
+}
+
 li {
 }
 
@@ -626,3 +630,12 @@ body {
 footer{
   border: 2px solid green;
 }
+
+
+
+.contact-btn{
+  border-radius: 20px;
+  background-color: var(--black);
+  
+}
+
