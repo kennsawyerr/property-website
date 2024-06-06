@@ -659,18 +659,19 @@ footer {
   /* position: absolute; */
   display: block;
   height: 100px;
+  border-radius: 50%;
   background-color: #000;
 }
 
 .yellow-bg {
   position: relative;
   background-color: yellow;
-  margin: 10px auto;
-  width:100%;
+  border-radius: 50px;
+  width: fit-content;
   min-width: max-content;
   height: 100px;
-  border-radius: 50%;
-  /* pass widthand border-radius as dynamic props 
+
+  /* pass width and border-radius as dynamic props 
     b-ball width === b.ball height
   */
 }

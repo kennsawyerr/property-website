@@ -63,21 +63,32 @@ import { motion } from "framer-motion";
 const Demo = () => {
   return (
     <>
-      <div className="yellow-bg">
+      <div className="container">
         <motion.div
-          className="ballistic-ball"
+          className="yellow-bg"
           whileInView={{
-            x: 500,
-            scale: [1, 1, 1, 1, 1],
-            rotate: [0, 0, 180, 180, 0],
-            borderRadius: ["50%", "50%", "50%", "50%", "50%"],
+            width: 600, 
           }}
           transition={{
             duration: 1,
             ease: "easeIn",
-            // times: [0, 0.2, 0.5, 0.8, 1],
           }}
-        />
+        >
+          <motion.div
+            className="ballistic-ball"
+            whileInView={{
+              x: 500,
+              scale: [1, 1, 1, 1, 1],
+              rotate: [180, 180, 180, 180, 180],
+              borderRadius: ["50%", "50%", "50%", "50%", "50%"],
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeIn",
+              // times: [0, 0.2, 0.5, 0.8, 1],
+            }}
+          />
+        </motion.div>
       </div>
     </>
   );

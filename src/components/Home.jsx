@@ -23,7 +23,7 @@ const Home = () => {
     <>
       <Navbar />
       <Landingpage />
-
+    
       <Solutions />
       <LandingPageTwo />
       <Property />

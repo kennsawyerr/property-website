@@ -1,44 +1,33 @@
-import { useState } from "react";
-import { useScroll, useTransform } from "framer-motion";
-import { HiOutlineArrowDown } from "react-icons/hi2";
-import { FaArrowAltCircleUp } from "react-icons/fa";
-useState;
-
-//animation
-
-// import "aos/dist/aos.css";
-
-//animation
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-
-const CircularSlide = ({ herotext }) => {
-  const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
-  //   useEffect(() => {
-  //   AOS.init();
-  // }, []);
-  // const [animationCompleted, setAnimationCompleted] = useState(false);
-
-  // const handleAnimationEnd = () => {
-  //   setAnimationCompleted(true);
-  // };
-
+import { motion } from "framer-motion";
+const CircularSlide = () => {
   return (
     <>
-      <div className="black-contain">
-        <div className="circle">
-          <FaArrowAltCircleUp />
-        </div>
-
-        <div className="others" style={{ x }}>
-          <div className="down-arrow">
-            <HiOutlineArrowDown />
-          </div>
-          <div className="text">
-            <p className="p">{herotext}</p>
-          </div>
-        </div>
+      <div className="container">
+        <motion.div
+          className="yellow-bg"
+          whileInView={{
+            width: 600,
+          }}
+          transition={{
+            duration: 1,
+            ease: "easeIn",
+          }}
+        >
+          <motion.div
+            className="ballistic-ball"
+            whileInView={{
+              x: 500,
+              scale: [1, 1, 1, 1, 1],
+              rotate: [180, 180, 180, 180, 180],
+              borderRadius: ["50%", "50%", "50%", "50%", "50%"],
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeIn",
+              // times: [0, 0.2, 0.5, 0.8, 1],
+            }}
+          />
+        </motion.div>
       </div>
     </>
   );
