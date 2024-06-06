@@ -619,3 +619,10 @@ body {
   background-color: #000;
   color: white;
 }
+.border-yellow{
+  border: 2px solid yellow;
+}
+
+footer{
+  border: 2px solid green;
+}

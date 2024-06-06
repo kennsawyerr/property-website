@@ -2,8 +2,8 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container">
-          <ul>
+        <div className="container border-yellow">
+          <ul className="flex sect-pad">
             <li>
               <div>
                 <div className="logo">Monte</div>
@@ -44,7 +44,6 @@ const Footer = () => {
             <li>
               <div>
                 <div className="hero-subtext">
-                
                   &copyMonte 2024 Lorem ipsum dolor sit.
                 </div>
                 <div>
