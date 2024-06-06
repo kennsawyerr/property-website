@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-const CircularSlide = ({ ballWidth, ballSizeX }) => {
+const CircularSlide = ({ ballWidth, ballSizeX, ballCont, ballImg }) => {
   return (
     <>
       <div className="container">
@@ -8,6 +8,7 @@ const CircularSlide = ({ ballWidth, ballSizeX }) => {
             width: ballSizeX ? ballSizeX : 100,
             height: ballSizeX ? ballSizeX : 100,
             borderRadius: ballSizeX ? ballSizeX : 100,
+            backgroundColor: ballCont ? ballCont : "white",
           }}
           className="yellow-bg"
           whileInView={{
@@ -22,6 +23,10 @@ const CircularSlide = ({ ballWidth, ballSizeX }) => {
             style={{
               width: ballSizeX ? ballSizeX : 100,
               height: ballSizeX ? ballSizeX : 100,
+              backgroundImage: `url(${ballImg})`,
+              backgroundSize: "cover", // Make sure the image covers the whole div
+              backgroundPosition: "center", // Center the background image
+              backgroundRepeat: "no-repeat", // Prevent the image from repeating
             }}
             className="ballistic-ball"
             whileInView={{
