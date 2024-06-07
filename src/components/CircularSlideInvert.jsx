@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-const CircularSlide = ({ ballWidth, ballSizeX, ballCont, ballImg }) => {
+const CircularSlideInvert = ({ ballWidth, ballSizeX, ballCont, ballImg }) => {
   return (
     <>
       <div className="container">
@@ -12,7 +12,7 @@ const CircularSlide = ({ ballWidth, ballSizeX, ballCont, ballImg }) => {
           }}
           className="yellow-bg"
           whileInView={{
-            width: ballWidth ? ballWidth + ballSizeX : 500,
+            width: ballWidth ? ballWidth + ballSizeX : -500,
           }}
           transition={{
             duration: 1,
@@ -47,4 +47,4 @@ const CircularSlide = ({ ballWidth, ballSizeX, ballCont, ballImg }) => {
   );
 };
 
-export default CircularSlide;
+export default CircularSlideInvert;
